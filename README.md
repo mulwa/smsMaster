@@ -1,5 +1,5 @@
 # [Sms-Master](https://www.creative-tim.com/product/paper-dashboard-angular)
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/paper-dashboard-angular.svg?maxAge=2592000)]
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ![alt tag](https://github.com/mulwa/smsMaster/blob/master/screenshoots/individualpic.png "SMS INDIVIDUAL")
 
@@ -16,7 +16,7 @@
     4. Schedule messages to contacts or groups.
     5. Users can View and download message delivery reports. 
 
-## Terminal Commands
+## Installation Instructions
 
 1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
 2. Open Terminal
@@ -35,4 +35,3 @@ Twitter: <https://twitter.com/General_Mulwa>
 
 Linkedin: <https://www.linkedin.com/in/mulwa-christopher-369863121/>
 
-Instagram: <https://instagram.com/creativetimofficial>
