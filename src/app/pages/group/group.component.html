@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="btn btn-primary" *ngIf="!show_form" (click)="toogleForm()">New Group</div>
+      </div>
+    <div class="col-md-12" *ngIf="show_form">
+        <app-addgroup [showForm]="show_form"
+        (FormEvent)="receiveFormEvent($event)"></app-addgroup>
+    </div>
+    <div class="col-md-4">
+        <app-group-list (groupEvent)="onGroupSelect($event)"></app-group-list>
+    </div>
+    <!-- <div class="col-md-8">
+        <app-group-message></app-group-message>
+    </div> -->
+    <div class="col-md-8">
+        <span *ngIf="!group">
+            <p>Please Select select Group</p>
+        </span>
+        <span *ngIf="group" ><app-group-members-list [group]="group"></app-group-members-list></span>
+    </div>
+</div>

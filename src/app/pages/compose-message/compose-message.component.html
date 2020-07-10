@@ -1,0 +1,48 @@
+<div class="card card-user">
+  <div class="card-header">
+    <h5 class="card-title">Compose Message </h5>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="messageForm">
+      <div class="row">
+        <div class="col-md-12 pr-1">
+          <div class="form-group">
+            <label>From</label>
+            <input
+              type="text"
+              class="form-control"
+              disabled=""
+              placeholder="Company"
+              value="SMS-Master"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 pr-1">
+          <div class="form-group">
+            <label>To</label>
+            <input type="text" class="form-control" disabled="" value="{{contact?.name}}" />
+          </div>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control textarea" formControlName="message"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="update ml-auto mr-auto">
+          <button type="submit" class="btn btn-primary btn-round" (click)="sendSms()">
+            Send Message
+          </button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  
+</div>

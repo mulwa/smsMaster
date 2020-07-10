@@ -1,0 +1,32 @@
+<div class="row ">
+    <div class="col-md-6">
+        <div class="card card-user">
+          <div class="card-header">
+            <h5 class="card-title">New Group {{showForm}}</h5>
+          </div>
+          <div class="card-body">
+            <form [formGroup]="groupForm">
+              <div class="row">
+                <div class="col-md-12 pr-1">
+                  <div class="form-group">
+                    <label>Group Name</label>
+                    <input type="text" formControlName="name" class="form-control" placeholder="Group Name" >
+                  </div>
+                </div>      
+              </div>
+              <div class="row">
+                <div class="update col-md-6">
+                  <button type="submit" class="btn btn-primary" (click)="onSave()">Create Group</button>
+                </div>
+                <div class="update col-md-6">
+                  <button type="submit" class="btn btn-primary" (click)="closeForm()">Cancle</button>
+                </div>
+              </div>    
+              
+            </form>
+          </div>
+        </div>
+      </div>
+</div>
+
+

@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="btn btn-primary" *ngIf="!show_form" (click)="toogleForm()">New Contact</div>
+  </div>
+</div>
+<div class="row" *ngIf="show_form">
+    <div class="col-md-12">
+        <app-createcontacts [showForm]="show_form"
+        (FormEvent)="receiveFormEvent($event)"></app-createcontacts>
+    </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <app-contact-list (contactEvent)="onContactSelect($event)"></app-contact-list>
+  </div>  
+  <div class="col-md-8" *ngIf="!contact">
+    <div class="card" >
+      <div class="card-body">
+        <p>Please Select Message Receiver</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8"  *ngIf="contact">
+    <app-compose-message 
+     [contact]="contact" ></app-compose-message>
+  </div>
+</div>

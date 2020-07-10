@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <input
+          type="text"
+          class="form-control search-input"
+          placeholder="Search Employee"
+        />
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let contact of contacts"(click)="contactSelected(contact)"
+          [class.highlighted]="contact?.phone_number === currentrow">
+            <div class="row">
+              <div class="col-md-7">
+                {{ contact?.name }}
+              </div>
+              <div class="col-md-5">
+                <span>{{ contact?.phone_number }}</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
